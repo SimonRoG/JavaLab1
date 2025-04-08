@@ -43,9 +43,10 @@ public class Car {
     }
 
     public void info() {
-        System.out.printf("%s has %s HP. Weighs %s. %s modified.%n", this.getName(), hp, weight, turboMod ? "Turbo" : "Not" );
+        System.out.printf("%s has %s HP. Weighs %s. %s modified.%n", this.getName(), hp, weight, turboMod ? "Turbo" : "Not");
     }
 
+    // modify car by adding a turbine, if not modified.
     public void modify() {
         if (turboMod) {
             System.out.printf("%s is already modified.%n", this.getName());
@@ -57,6 +58,7 @@ public class Car {
         }
     }
 
+    // modify car by adding turbines, if not modified.
     public void modify(int turbines) {
         if (turboMod) {
             System.out.printf("%s is already modified.%n", this.getName());
@@ -76,6 +78,7 @@ public class Car {
         return (this.hp > car.hp);
     }
 
+    // built a monster car from 2 other cars
     public static Car builtAMonster(Car car1, Car car2, String monsterModel) {
         int monsterHP = (int) ((car1.hp + car2.hp) * 0.9);
         int monsterWeight = car1.weight + car2.weight;
