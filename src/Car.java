@@ -85,4 +85,19 @@ public class Car {
         boolean monsterTurbo = car1.turboMod || car2.turboMod;
         return new Car("Monster", monsterModel, monsterHP, monsterWeight, monsterTurbo);
     }
+
+    // вкладений клас
+    public static class Engine {
+        private double volume;
+        private String type;
+
+        public Engine(double volume, String type) {
+            this.volume = volume;
+            this.type = type;
+        }
+
+        public void info() {
+            System.out.printf("Engine volume: %s, type: %s%n", volume, type);
+        }
+    }
 }
