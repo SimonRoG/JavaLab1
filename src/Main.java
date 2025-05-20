@@ -1,49 +1,40 @@
-import java.util.ArrayList;
-
 public class Main {
     public static void main(String[] args) {
-        // масив об’єктів класу
-        ArrayList<Car> carList = new ArrayList<>();
+        // масив
+        Car[] cars = {
+                new Car("Toyota", "Corolla", 150, 1300, false),
+                new Taxi("Ford", "Mondeo", 180, 1400, true, 50),
+                new Taxi("Mercedes", "E-class", 250, 1600, true, 65),
+                new Car("Audi", "A4", 200, 1450, false),
+                new Taxi("Skoda", "Superb", 170, 1350, false, 55)
+        };
 
-        // створення класу без конструктора класу.
-        // Car car = null;
-        // car.brand = "VW";
-        // car.model = "Polo";
-        // car.hp = 125;
-        // car.weight = 1250;
-        // car.turboMod = false;
-        // carList.add(car);
-
-        // наповнення масива об’єктів класу
-        // конструктор за замовчуванням
-        carList.add(new Car());
-        // конструктор неповний
-        carList.add(new Car("Semen-Mobil", "2004"));
-        // конструктор повний
-        carList.add(new Car("Königsegg", "CC850", 1385, 1385, true));
-
-        // розрахункові дії, статичний метод: створення авто з 2 інших авто
-        Car monster = Car.builtAMonster(carList.getFirst(), carList.get(1), "SP1");
-        carList.add(monster);
-
-        for (Car car : carList) {
+        for (Car car : cars) {
             car.info();
+            if (car instanceof Taxi taxi)
+                taxi.drive();
+            System.out.println();
         }
+
+        TaxiDepot depot = new TaxiDepot("CityTaxi");
+        for (Car car : cars)
+            if (car instanceof Taxi taxi)
+                depot.add(taxi);
+
+        depot.info();
+
+        depot.showTaxiWithFareAbove(50);
         System.out.println();
 
-        // розрахункові дії: покращення авто
-        carList.get(1).modify();
-        carList.get(1).info();
+        System.out.printf("Max fare: %s%n%n", depot.findMaxFareTaxi().getName());
+
+        depot.sortByFare();
+        System.out.printf("Sorted Taxi in depot:%n");
+        depot.info();
+
+        Taxi.Engine engine = new Taxi.Engine(2.0, "Diesel");
+        engine.info();
         System.out.println();
 
-        // розрахункові дії: порвняня одного авто з іншим
-        System.out.printf("%s is %s powerful then %s%n%n",
-                carList.getFirst().getName(),
-                carList.getFirst().isMorePowerful(carList.get(1)) ? "more" : "less",
-                carList.get(1).getName());
-
-        // розрахункові дії: приклад визначення методу з одним іменем, але різним списком аргументів
-        carList.get(monster.getId()).modify(4);
-        carList.get(monster.getId()).info();
     }
 }
