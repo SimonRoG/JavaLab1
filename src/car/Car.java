@@ -1,3 +1,5 @@
+package car;
+
 public class Car {
     private static int nextId = 0;
     private int id;

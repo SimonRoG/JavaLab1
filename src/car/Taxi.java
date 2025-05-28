@@ -1,3 +1,5 @@
+package car;
+
 // наслідування класу Car -> Taxi
 public class Taxi extends Car {
     private int fare;

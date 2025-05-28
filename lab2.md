@@ -30,6 +30,8 @@
 #### `Car.java`
 
 ```java
+package car;
+
 public class Car {
     private static int nextId = 0;
     private int id;
@@ -138,6 +140,8 @@ public class Car {
 #### `Taxi.java`
 
 ```java
+package car;
+
 // наслідування класу Car -> Taxi
 public class Taxi extends Car {
     private int fare;
@@ -166,6 +170,8 @@ public class Taxi extends Car {
 #### `TaxiDepot.java`
 
 ```java
+package car;
+
 import java.util.ArrayList;
 import java.util.Comparator;
 
@@ -229,6 +235,10 @@ public class TaxiDepot {
 #### `Main.java`
 
 ```java
+import car.Car;
+import car.Taxi;
+import car.TaxiDepot;
+
 public class Main {
     public static void main(String[] args) {
         // масив
