@@ -396,7 +396,7 @@ Skoda Superb has 170 HP. Weighs 1350. Not modified.
 Taxi fare: 55 UAH
 ```
 
-    - відшукувати об’єкт, який відповідає заданим вимогам:
+- відшукувати об’єкт, який відповідає заданим вимогам:
 
 ```
 Mercedes E-class has 250 HP. Weighs 1600. Turbo modified.
