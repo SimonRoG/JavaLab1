@@ -44,6 +44,18 @@ public class Car {
         return brand + " " + model;
     }
 
+    public int getHp() {
+        return hp;
+    }
+
+    public int getWeight() {
+        return weight;
+    }
+
+    public boolean isTurboMod() {
+        return turboMod;
+    }
+
     public void info() {
         System.out.printf("%s has %s HP. Weighs %s. %s modified.%n", this.getName(), hp, weight, turboMod ? "Turbo" : "Not");
     }
