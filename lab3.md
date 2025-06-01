@@ -380,3 +380,125 @@ public class Main {
 ```
 
 ### Результати тестування класу:
+
+[^1]: 1
+```
+Розробити клас, в якому агрегуються об’єкти класу у вигляді колекції інтерфейсного типу `Collection`.
+Ford Mondeo has 180 HP. Weighs 1400. Turbo modified.
+Taxi fare: 50 UAH
+Mercedes E-class has 250 HP. Weighs 1600. Turbo modified.
+Taxi fare: 65 UAH
+Mercedes E-class has 250 HP. Weighs 1600. Turbo modified.
+Taxi fare: 65 UAH
+Skoda Superb has 170 HP. Weighs 1350. Not modified.
+Taxi fare: 55 UAH
+
+відшукувати об’єкт, який відповідає заданим вимогам:
+Mercedes E-class has 250 HP. Weighs 1600. Turbo modified.
+Taxi fare: 65 UAH
+
+створювати колекцію, яка містить тільки унікальні елементи
+Mercedes E-class has 250 HP. Weighs 1600. Turbo modified.
+Taxi fare: 65 UAH
+Ford Mondeo has 180 HP. Weighs 1400. Turbo modified.
+Taxi fare: 50 UAH
+Skoda Superb has 170 HP. Weighs 1350. Not modified.
+Taxi fare: 55 UAH
+
+порівнювати об’єкти за різними критеріями якості
+Skoda Superb has 170 HP. Weighs 1350. Not modified.
+Taxi fare: 55 UAH
+Ford Mondeo has 180 HP. Weighs 1400. Turbo modified.
+Taxi fare: 50 UAH
+Mercedes E-class has 250 HP. Weighs 1600. Turbo modified.
+Taxi fare: 65 UAH
+Mercedes E-class has 250 HP. Weighs 1600. Turbo modified.
+Taxi fare: 65 UAH
+
+виконувати операцію фільтрації об’єктів за заданою ознакою
+Ford Mondeo has 180 HP. Weighs 1400. Turbo modified.
+Taxi fare: 50 UAH
+Mercedes E-class has 250 HP. Weighs 1600. Turbo modified.
+Taxi fare: 65 UAH
+Mercedes E-class has 250 HP. Weighs 1600. Turbo modified.
+Taxi fare: 65 UAH
+
+виконувати визначення середнього значення кількісної ознаки об’єкта
+1487,50
+
+Розробити метод для сортування об’єктів за вибраним критерієм якості
+з анонімним класом
+Ford Mondeo has 180 HP. Weighs 1400. Turbo modified.
+Taxi fare: 50 UAH
+Skoda Superb has 170 HP. Weighs 1350. Not modified.
+Taxi fare: 55 UAH
+Mercedes E-class has 250 HP. Weighs 1600. Turbo modified.
+Taxi fare: 65 UAH
+Mercedes E-class has 250 HP. Weighs 1600. Turbo modified.
+Taxi fare: 65 UAH
+
+з лямбда-виразом
+Ford Mondeo has 180 HP. Weighs 1400. Turbo modified.
+Taxi fare: 50 UAH
+Skoda Superb has 170 HP. Weighs 1350. Not modified.
+Taxi fare: 55 UAH
+Mercedes E-class has 250 HP. Weighs 1600. Turbo modified.
+Taxi fare: 65 UAH
+Mercedes E-class has 250 HP. Weighs 1600. Turbo modified.
+Taxi fare: 65 UAH
+
+з посиланням на методи
+Ford Mondeo has 180 HP. Weighs 1400. Turbo modified.
+Taxi fare: 50 UAH
+Skoda Superb has 170 HP. Weighs 1350. Not modified.
+Taxi fare: 55 UAH
+Mercedes E-class has 250 HP. Weighs 1600. Turbo modified.
+Taxi fare: 65 UAH
+Mercedes E-class has 250 HP. Weighs 1600. Turbo modified.
+Taxi fare: 65 UAH
+
+Розробити клас, в якому агрегуються об’єкти класу у вигляді колекції інтерфейсного типу `Map`
+визначати для колекції суму заданої кількісної ознаки
+235
+
+фільтрувати об’єкти колекції за вибраною ознакою
+Mercedes E-class has 250 HP. Weighs 1600. Turbo modified.
+Taxi fare: 65 UAH
+Mercedes E-class has 250 HP. Weighs 1600. Turbo modified.
+Taxi fare: 65 UAH
+
+видаляти з колекції об’єкти, які не відповідають заданому критерію
+Skoda Superb has 170 HP. Weighs 1350. Not modified.
+Taxi fare: 55 UAH
+
+Розробити метод для сортування об’єктів послідовно за кількома вибраними ознаками
+з анонімним класом
+Ford Mondeo has 180 HP. Weighs 1400. Turbo modified.
+Taxi fare: 50 UAH
+Mercedes E-class has 250 HP. Weighs 1600. Turbo modified.
+Taxi fare: 65 UAH
+Mercedes E-class has 250 HP. Weighs 1600. Turbo modified.
+Taxi fare: 65 UAH
+Skoda Superb has 170 HP. Weighs 1350. Not modified.
+Taxi fare: 55 UAH
+
+з лямбда-виразом
+Ford Mondeo has 180 HP. Weighs 1400. Turbo modified.
+Taxi fare: 50 UAH
+Mercedes E-class has 250 HP. Weighs 1600. Turbo modified.
+Taxi fare: 65 UAH
+Mercedes E-class has 250 HP. Weighs 1600. Turbo modified.
+Taxi fare: 65 UAH
+Skoda Superb has 170 HP. Weighs 1350. Not modified.
+Taxi fare: 55 UAH
+
+з посиланням на методи
+Ford Mondeo has 180 HP. Weighs 1400. Turbo modified.
+Taxi fare: 50 UAH
+Mercedes E-class has 250 HP. Weighs 1600. Turbo modified.
+Taxi fare: 65 UAH
+Mercedes E-class has 250 HP. Weighs 1600. Turbo modified.
+Taxi fare: 65 UAH
+Skoda Superb has 170 HP. Weighs 1350. Not modified.
+Taxi fare: 55 UAH
+```
